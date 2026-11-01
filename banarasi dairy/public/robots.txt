@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Block nothing — the whole site is public.
+
+Sitemap: https://www.banarasidudhdairy.in/sitemap.xml

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Banarasi Dudh Dairy — Sweet Stories &amp; Festival Guides</title>
+    <link>https://www.banarasidudhdairy.in/blog</link>
+    <description>
+      Guides on traditional Indian sweets, festival ordering, family celebrations and sweet gift packing ideas
+      from Banarasi Dudh Dairy, Powai, Mumbai.
+    </description>
+    <language>en-IN</language>
+    <atom:link href="https://www.banarasidudhdairy.in/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Top 10 Traditional Indian Sweets You Should Try</title>
+      <link>https://www.banarasidudhdairy.in/blog/top-10-traditional-indian-sweets</link>
+      <guid>https://www.banarasidudhdairy.in/blog/top-10-traditional-indian-sweets</guid>
+      <pubDate>Mon, 12 Jan 2026 00:00:00 +0530</pubDate>
+      <description>
+        From motichoor laddu to kaju katli, ten traditional Indian sweets every mithai lover should try.
+      </description>
+    </item>
+    <item>
+      <title>Popular Indian Sweets for Diwali</title>
+      <link>https://www.banarasidudhdairy.in/blog/popular-indian-sweets-for-diwali</link>
+      <guid>https://www.banarasidudhdairy.in/blog/popular-indian-sweets-for-diwali</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 +0530</pubDate>
+      <description>A guide to the most-loved Diwali mithai for guests, gifting and family functions.</description>
+    </item>
+    <item>
+      <title>Best Indian Sweets for Family Celebrations</title>
+      <link>https://www.banarasidudhdairy.in/blog/best-indian-sweets-for-family-celebrations</link>
+      <guid>https://www.banarasidudhdairy.in/blog/best-indian-sweets-for-family-celebrations</guid>
+      <pubDate>Sat, 21 Mar 2026 00:00:00 +0530</pubDate>
+      <description>How to pick a balanced mix of mithai for birthdays, pujas and anniversaries.</description>
+    </item>
+    <item>
+      <title>Traditional Indian Sweets for Festivals Through the Year</title>
+      <link>https://www.banarasidudhdairy.in/blog/traditional-indian-sweets-for-festivals</link>
+      <guid>https://www.banarasidudhdairy.in/blog/traditional-indian-sweets-for-festivals</guid>
+      <pubDate>Fri, 14 Aug 2026 00:00:00 +0530</pubDate>
+      <description>The sweets associated with Diwali, Holi, Ganesh Chaturthi, Raksha Bandhan and Navratri.</description>
+    </item>
+    <item>
+      <title>Indian Sweet Gift Packing Ideas</title>
+      <link>https://www.banarasidudhdairy.in/blog/indian-sweet-gift-packing-ideas</link>
+      <guid>https://www.banarasidudhdairy.in/blog/indian-sweet-gift-packing-ideas</guid>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0530</pubDate>
+      <description>Practical packing ideas for festivals, weddings and corporate gifting.</description>
+    </item>
+    <item>
+      <title>The Role of Fresh Dairy in Traditional Indian Sweets</title>
+      <link>https://www.banarasidudhdairy.in/blog/fresh-dairy-in-traditional-indian-sweets</link>
+      <guid>https://www.banarasidudhdairy.in/blog/fresh-dairy-in-traditional-indian-sweets</guid>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 +0530</pubDate>
+      <description>Why fresh milk is the foundation of classic Indian mithai.</description>
+    </item>
+  </channel>
+</rss>

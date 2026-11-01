@@ -1,0 +1,379 @@
+@import "tailwindcss";
+
+/* ============================================================
+   BANARASI DUDH DAIRY — PREMIUM DESIGN SYSTEM
+   Royal Maroon · Deep Burgundy · Metallic Gold · Champagne Gold
+   ============================================================ */
+
+@theme {
+  /* Brand palette */
+  --color-maroon: #720d16;
+  --color-burgundy: #950f1d;
+  --color-gold: #d6a63b;
+  --color-champagne: #f5dfa6;
+  --color-cream: #fff3d9;
+  --color-ink: #29201d;
+  --color-ink-soft: #5b4b45;
+  --color-maroon-dark: #4d090f;
+
+  /* Typography */
+  --font-display: "Playfair Display", "Georgia", "Times New Roman", serif;
+  --font-body: "Poppins", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-hindi: "Noto Sans Devanagari", "Poppins", "Segoe UI", sans-serif;
+
+  /* Motion */
+  --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Shadows (restrained, warm) */
+  --shadow-soft: 0 1px 2px rgb(41 32 29 / 0.04), 0 8px 24px -12px rgb(114 13 22 / 0.18);
+  --shadow-card: 0 2px 4px rgb(41 32 29 / 0.05), 0 18px 40px -22px rgb(114 13 22 / 0.28);
+  --shadow-lift: 0 4px 8px rgb(41 32 29 / 0.06), 0 28px 56px -24px rgb(114 13 22 / 0.35);
+}
+
+/* ------------------------------------------------------------
+   BASE
+   ------------------------------------------------------------ */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 6.5rem;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: -0.01em;
+    color: var(--color-maroon);
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  img,
+  picture,
+  svg,
+  iframe {
+    display: block;
+    max-width: 100%;
+  }
+
+  img {
+    height: auto;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button {
+    font-family: inherit;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-gold);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  ::selection {
+    background: var(--color-champagne);
+    color: var(--color-maroon);
+  }
+}
+
+/* ------------------------------------------------------------
+   EDITORIAL / ARTICLE TYPOGRAPHY (blog + legal pages)
+   ------------------------------------------------------------ */
+.prose-bdd {
+  font-size: 1.0625rem;
+  line-height: 1.85;
+  color: var(--color-ink-soft);
+}
+
+.prose-bdd > * + * {
+  margin-top: 1.35em;
+}
+
+.prose-bdd h2 {
+  margin-top: 2.2em;
+  font-size: 1.4rem;
+  color: var(--color-maroon);
+  line-height: 1.3;
+}
+
+.prose-bdd h3 {
+  margin-top: 1.8em;
+  font-size: 1.15rem;
+  color: var(--color-maroon);
+}
+
+@media (min-width: 640px) {
+  .prose-bdd h2 {
+    font-size: 1.6rem;
+  }
+
+  .prose-bdd h3 {
+    font-size: 1.25rem;
+  }
+}
+
+.prose-bdd p {
+  margin-top: 1.2em;
+}
+
+.prose-bdd a {
+  color: var(--color-maroon);
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: var(--color-champagne);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.prose-bdd a:hover {
+  color: var(--color-burgundy);
+  text-decoration-color: var(--color-gold);
+}
+
+.prose-bdd strong {
+  color: var(--color-ink);
+  font-weight: 600;
+}
+
+.prose-bdd ul,
+.prose-bdd ol {
+  margin-top: 1.2em;
+  padding-left: 1.4em;
+}
+
+.prose-bdd ul {
+  list-style: none;
+}
+
+.prose-bdd ul > li {
+  position: relative;
+  padding-left: 0.4em;
+}
+
+.prose-bdd ul > li::before {
+  content: "";
+  position: absolute;
+  left: -0.9em;
+  top: 0.72em;
+  height: 0.42em;
+  width: 0.42em;
+  border-radius: 999px;
+  background: var(--color-gold);
+}
+
+.prose-bdd ol {
+  list-style: decimal;
+}
+
+.prose-bdd ol > li::marker {
+  color: var(--color-gold);
+  font-weight: 600;
+  font-family: var(--font-display);
+}
+
+.prose-bdd li + li {
+  margin-top: 0.55em;
+}
+
+.prose-bdd blockquote {
+  margin-top: 1.8em;
+  border-left: 3px solid var(--color-gold);
+  border-radius: 0 0.75rem 0.75rem 0;
+  background: var(--color-cream);
+  padding: 1.15rem 1.4rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--color-maroon);
+}
+
+.prose-bdd figure {
+  margin-top: 2em;
+}
+
+.prose-bdd figure img {
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid var(--color-champagne);
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.prose-bdd figcaption {
+  margin-top: 0.7rem;
+  font-size: 0.875rem;
+  font-style: italic;
+  text-align: center;
+  color: var(--color-ink-soft);
+}
+
+/* ------------------------------------------------------------
+   BRAND UTILITIES
+   ------------------------------------------------------------ */
+/* ------------------------------------------------------------
+   BRAND UTILITIES
+   ------------------------------------------------------------ */
+
+/* Elegant gold divider used under section headings */
+@utility rule-gold {
+  &::after {
+    content: "";
+    display: block;
+    width: 4.5rem;
+    height: 3px;
+    margin-top: 1rem;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--color-gold), var(--color-champagne));
+  }
+}
+
+@utility rule-gold-center {
+  &::after {
+    content: "";
+    display: block;
+    width: 4.5rem;
+    height: 3px;
+    margin-top: 1rem;
+    margin-inline: auto;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--color-gold), var(--color-champagne));
+  }
+}
+
+/* Subtle traditional paisley-inspired motif built from CSS only */
+@utility pattern-maroon {
+  background-color: var(--color-maroon);
+  background-image:
+    radial-gradient(circle at 12% 18%, rgb(214 166 59 / 0.14) 0 12%, transparent 13%),
+    radial-gradient(circle at 88% 82%, rgb(214 166 59 / 0.12) 0 12%, transparent 13%),
+    radial-gradient(circle at 50% 50%, rgb(245 223 166 / 0.05) 0 1px, transparent 2px);
+  background-size:
+    180px 180px,
+    180px 180px,
+    22px 22px;
+}
+
+@utility pattern-cream {
+  background-color: var(--color-cream);
+  background-image:
+    radial-gradient(circle at 50% 50%, rgb(214 166 59 / 0.16) 0 1.5px, transparent 2px),
+    radial-gradient(circle at 0 0, rgb(114 13 22 / 0.05) 0 12%, transparent 13%);
+  background-size:
+    26px 26px,
+    220px 220px;
+}
+
+/* ------------------------------------------------------------
+   ANIMATIONS (lightweight)
+   ------------------------------------------------------------ */
+@keyframes bdd-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bdd-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bdd-pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgb(214 166 59 / 0.55);
+  }
+  70% {
+    box-shadow: 0 0 0 18px rgb(214 166 59 / 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgb(214 166 59 / 0);
+  }
+}
+
+@utility animate-rise {
+  animation: bdd-rise 0.7s var(--ease-premium) both;
+}
+
+@utility animate-fade {
+  animation: bdd-fade 0.9s ease both;
+}
+
+@utility animate-ring {
+  animation: bdd-pulse-ring 2.6s ease-out infinite;
+}
+
+/* Respect user motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Thin maroon scrollbar for a polished desktop feel */
+@media (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 11px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-cream);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-maroon);
+    border-radius: 999px;
+    border: 3px solid var(--color-cream);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-burgundy);
+  }
+}
